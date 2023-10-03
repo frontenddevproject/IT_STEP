@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/styles.css" type="text/css">
+   </head>
+   <body>
+      <div class="wrapper">
+         <header><img src="images/EVE_online_logo.png" alt="" class="logo"></header>
+         <input class="open-reg" id="top-box" type="checkbox" hidden>
+         <label class="btn-reg" for="top-box"><div class="registration-form_open">Start &nbsp;&nbsp; your &nbsp;&nbsp; game</div><div class="registration-form_close">X</div></label>
+         <div class="registration-form">
+            <div class="registration-form__container">
+               <h2 class="registration-form__title">Create your account</h2>
+               <form  name="registr" method="post" action="">
+                  <div id="user-login">
+                     <input type="text" placeholder="LOGIN" name="userLogin" maxlength="100" required>
+                     <span>Enter your login</span>
+                  </div>
+                  <div id="user-email">
+                     <input type="email" placeholder="EMAIL" name="userEmail" maxlength="100" required>
+                     <span>Enter your email address</span>
+                  </div>
+                  <div id="user-birthday">
+                     <input type="date" id="date" name="userBirthday" min="1900-01-01" max="2022-12-09" required>
+                     <span>Enter your birthday</span>
+                  </div>
+                  <div id="genderOfUser">
+                     <select name="gender">
+                        <option selected value="none"></option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                     </select>
+                     <span>Сhoose your gender</span>
+                  </div>
+                  <div id="user-location">
+                     <input type="text" placeholder="LOCATION" name="country" list="countryUser" required>
+                        <datalist id="countryUser">
+                           <option value="Ukraine">Ukraine</option>
+                           <option value="United States">United States</option>
+                           <option value="Netherlands">Netherlands</option>
+                           <option value="Germany">Germany</option>
+                           <option value="France">France</option>
+                           <option value="United Kingdom">United Kingdom</option>
+                           <option value="Poland">Poland</option>
+                           <option value="Spain">Spain</option>
+                        </datalist>
+                     <span>Start entering your location</span>
+                  </div>
+                  <div id="user-experience">
+                     <input type="number" placeholder="EXPERIENCE" name="userExperience" id="Experience" min="0" max="60" step="1">
+                     <span>Choose your game experience (years)</span>
+                  </div>
+                  <div id="fraction">
+                     <fieldset class="fraction">
+                        <legend>CHOOSE YOUR FUTURE FRACTION</legend>
+                        <ul class="fraction__list">
+                           <li class="fraction__list__item">
+                              <label>
+                                 <input type="radio" name="fraction" value="galente" checked> 
+                                 <span>Galente</span>
+                              </label>
+                           </li>
+                           <li class="fraction__list__item">
+                              <label>
+                                 <input type="radio" name="fraction" value="amarr"> 
+                                 <span>Amarr</span>
+                              </label>
+                           </li>
+                           <li class="fraction__list__item">
+                              <label>
+                                 <input type="radio" name="fraction" value="minmatar"> 
+                                 <span>Minmatar</span>
+                              </label>
+                           </li>
+                           <li class="fraction__list__item">
+                              <label>
+                                 <input type="radio" name="fraction" value="kaldari"> 
+                                 <span>Kaldari</span>
+                              </label>
+                           </li>
+                        </ul>
+                     </fieldset>
+                  </div>
+                  <div class="registration__footer">
+                     <div id="terms">
+                           <input type="checkbox" name="year" value="yes" checked> I agree to the <a href="#" class="registration__footer_link">Terms of Service</a> and confirm
+                     </div>
+                     <div class="registration__footer-btn">
+                        <button type="submit" class="footer-btn" value="submit">REGISTER</button>
+                        <button type="reset" class="footer-btn" value="clear">CLEAR</button>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>     
+   </body>
+</html>

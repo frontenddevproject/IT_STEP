@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/styles.css" type="text/css">
+   </head>
+   <body>
+      <div class="wrapper">
+         <input class="open-reg" id="top-box" type="checkbox" hidden>
+         <label class="btn-reg" for="top-box"><div class="sushi-form_open"></div></label>
+         <div class="sushi-form">
+            <h2>Ви готові побалувати себе?<br>Тоді негайте часу і замовляйте!</h2>
+            <form  action="" method="post">
+            <ul class="order__list">
+               <li class="order__list__item">
+                  <label>
+                     <span>Ім'я</span> 
+                  <input type="text" name="name" id="clientName" placeholder="Введіть ваше ім'я" maxlength="50" required>
+                  </label>
+               </li>
+               <li class="order__list__item">
+                  <label>
+                     <span>Адреса доставки</span>
+                  <input type="text" name="address" id="clientAddress" placeholder="Введіть адресу доставки" maxlength="100" required>
+                  </label>
+               </li>
+               <li class="order__list__item">
+                  <label>
+                     <span>Телефон</span>
+                  <input type="tel" name="phone" id="clientPhone" placeholder="0501112233" maxlength="10" required>
+                  </label>
+               </li>
+               <li class="order__list__item">
+                  <label>
+                     <span>Email</span>
+                  <input type="email" name="email" id="clientEmail" placeholder="Введіть ваш email" maxlength="100">
+                  </label>
+               </li>
+               <li class="order__list__item">
+                  <label>
+                     <span>Кількість паличок</span>
+                  <input type="number" name="number" id="numberOfSticks" min="0" max="100" size="100">
+                  </label>
+               </li>
+               <li class="order__list__item">
+                  <label>
+                     <span>Оберіть вид паличок</span>
+                  <select>
+                     <option value="profi" selected>Звичайні</option>
+                     <option value="trainee">Навчальні</option>
+                  </select>
+                  </label>
+               </li>
+               <li class="order__list__item">
+                  
+                     <span>Які суші ви бажаете:</span>
+                     <ul class="order__list__item item-submenu">
+                     <li class="item-submenu__item"><input type="checkbox" name="sushi-1" value="sushi-1">Суші 1</li>
+                     <li class="item-submenu__item"><input type="checkbox" name="sushi-2" value="sushi-2">Суші 2</li>
+                     <li class="item-submenu__item"><input type="checkbox" name="sushi-3" value="sushi-3">Суші 3</li>
+                     <li class="item-submenu__item"><input type="checkbox" name="sushi-4" value="sushi-4">Суші 4</li>
+                     <li class="item-submenu__item"><input type="checkbox" name="sushi-5" value="sushi-5">Суші 5</li>
+                     <li class="item-submenu__item"><input type="checkbox" name="sushi-6" value="sushi-6">Суші 6</li>
+                     <li class="item-submenu__item"><input type="checkbox" name="sushi-7" value="sushi-7">Суші 7</li>
+                     <li class="item-submenu__item"><input type="checkbox" name="sushi-8" value="sushi-8">Суші 8</li>
+                     <li class="item-submenu__item"><input type="checkbox" name="sushi-9" value="sushi-9">Суші 7</li>
+                     <li class="item-submenu__item"><input type="checkbox" name="sushi-10" value="sushi-10">Суші 8</li>
+                     </ul>
+                  
+            </li>
+            <li class="order__list__item">
+               <label>
+                  <span>Чи потрібні вам салфетки</span>
+                  <input type="radio" name="Salfetki" value="Yes" checked>Так
+                  <input type="radio" name="Salfetki" value="No">Ні
+               </label>
+            <li class="order__list__item">
+            <label>
+            <p>Дадайте ваш коментар</p>
+            <textarea cols="50" rows="5"></textarea>
+            </label>
+            </li>
+            </ul>
+            <div class="order__footer-btn">
+               <button type="submit" class="footer-btn" value="submit">Замовити</button>
+               <button type="reset" class="footer-btn" value="clear">Очистити</button>
+            </div>
+         </form>
+            
+         </div>
+         
+      </div>     
+   </body>
+</html>

@@ -1,0 +1,205 @@
+@font-face {
+   font-family: 'TT Norms Pro';
+   src: url('../fonts/TTNormsPro-Regular.eot');
+   src:url('../fonts/TTNormsPro-Regular.woff2') format('woff2');
+   src:url('../fonts/TTNormsPro-Regular.woff') format('woff');
+   src:url('../fonts/TTNormsPro-Regular.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'TT Norms Pro';
+   src: url('../fonts/TTNormsPro-Bold.eot');
+   src:url('../fonts/TTNormsPro-Bold.woff2') format('woff2');
+   src:url('../fonts/TTNormsPro-Bold.woff') format('woff');
+   src:url('../fonts/TTNormsPro-Bold.ttf') format('truetype');
+   font-weight: bold;
+   font-style: normal;
+}
+html{
+   --black: #000;
+}
+body{
+   margin:0;
+   padding:0;
+   background-color: #5e90f2;
+   font-family: 'TT Norms Pro'; 
+   overflow: hidden;  
+}
+.container{
+   margin:80px auto;
+   max-width:1100px;
+   background: #EEE9FA;
+   position: relative;
+   padding:20px 120px;
+}
+.container__student-hat{
+   width:200px;
+   height:200px;
+   position: absolute;
+   background-color: #fff;
+   top:-30px;
+   left:-100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 10px;
+   box-shadow:  50px 50px 100px rgba(0, 0, 0, 0.295);
+}
+.container__hat-image{
+   width:150px;
+   transform: scale(-1,1);
+}
+.container__line{
+   position: fixed;
+   transform: scale(-1, 1) rotate(-45deg);
+   filter: invert(1);
+   right: 120px;
+   top: 250px;
+   z-index: -1;
+}
+.header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.header__logo-image{
+   width: 200px;
+}
+.header__menu-list{
+   list-style-type: none;
+   display: flex;
+   justify-content: space-between;
+   gap:20px;
+}
+.header__menu-item{
+   list-style-type: none;
+   margin-right: 40px;
+}
+.header__menu-item:last-child{
+   margin-right: 0;
+}
+.header__link{
+   text-decoration: none;
+   font-weight: 700;
+   color:var(--black);
+}
+.header__link:hover{
+   text-decoration: underline;
+}
+.button{
+   border: 2px solid var(--black);
+   border-radius: 30px;
+   padding:15px 30px;
+   cursor: pointer;
+}
+.header__button{
+   border-color:#a8a8a8;
+   transition: all 0.4s;
+}
+.header__button:hover{
+border-color: var(--black);
+}
+.header__link--withoutUnderline:hover{
+   text-decoration: none;
+}
+.main{
+   display: flex;
+   justify-content: space-between;
+   padding-top: 60px;
+   gap:30px
+}
+.main__content{
+  flex-basis:50%;
+  margin-bottom: 80px;
+}
+.main__content-title{
+   margin:0;
+   padding: 0 0 10px 0;
+   font-family:'Times New Roman', Times, serif;
+   font-size: 45px;
+}
+.main__content-text{
+   line-height: 25px;
+}
+.main__content-button{
+   width:70%;
+   padding: 20px 0;
+   display: flex;
+   justify-content: space-between;
+}
+.main-btn{
+   background-color: var(--black);
+   transition: all 0.5s;
+}
+.main__btn-link{
+   text-decoration: none;
+   font-weight: 700;
+   color:#fff;
+   transition: all 0.5s;
+}
+.main-btn--hand::before{
+   content: "";
+   display: inline-block;
+   background: url('../images/hand.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+   width:18px;
+   height: 18px;
+   vertical-align: top;
+   transform: scale(-1, 1);
+   filter: invert(1);
+   margin-right: 5px;
+   transition: all 0.5s;
+}
+.main-btn:hover{
+   background-color: transparent;
+}
+.main-btn:hover .main__btn-link{
+   color: var(--black);
+}
+.main-btn--hand:hover::before{
+   filter:invert(0);
+}
+.main__image{
+   display: flex;
+   justify-content: center;
+  
+   flex-basis: 50%;
+   position: relative;
+}
+.main__image-bg{
+   position: absolute;
+   width: 400px;
+   filter: brightness(0) invert(1);
+   top:-10%;
+   left:10%;
+}
+.main__image-student{
+   position: absolute;
+   width:300px;
+   top:0%;
+   right: 20%;
+}
+.footer__content{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex: 12.5%;
+   opacity: 0.6;
+}
+.footer__logo{
+   width:80px;
+   height: fit-content;
+}
+.footer__text{
+   width: 100px;
+}
+.footer__logo--twitter{
+   width:30px;
+   height: 30px;
+}
+.footer__logo--guide{
+   width:60px;
+   height: 50px;
+}

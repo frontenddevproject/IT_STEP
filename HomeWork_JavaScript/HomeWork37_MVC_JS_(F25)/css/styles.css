@@ -1,0 +1,34 @@
+body {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   background-color: black;
+}
+#canvas{
+   position: absolute;
+   top:0;
+   left:0;
+
+}
+.quantity-balls{
+  position: absolute;
+  top:0;
+  left:50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  margin: 30px;
+  width:210px;
+}
+
+#input-field{
+   width:100%;
+   height: 30px;
+   border-radius: 8px;
+   font-size: 20px;
+}
+
+span{
+   display: block;
+   color: #fff;
+   margin-top: 10px;
+}

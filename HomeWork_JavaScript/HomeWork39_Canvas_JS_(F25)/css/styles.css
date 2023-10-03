@@ -1,0 +1,18 @@
+body{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   
+}
+canvas{
+   position: absolute;
+   top:0;
+   left:0;
+}
+#canvas1{
+   background-color: black;
+}
+#canvas2 {
+   z-index: 2;
+   background: transparent;
+}

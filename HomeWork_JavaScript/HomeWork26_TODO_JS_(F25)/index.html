@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/styles.css" type="text/css">
+
+      <title>HomeWork 26 TODO JS (F25) (Lystopad)</title>
+   </head>
+   <body>
+      <button class="scroll-up">&#9650;</button>
+      <button class="scroll-down">&#9660;</button>
+      <div class="bg-image"><img class="image-pen" src="images/pen.png"></div>
+      <div class="wrapper">
+         <header>
+            <h1>Todo App</h1>
+         </header>
+         
+         <main>
+            <section class="input-container">
+               <input type="text" id="todo-creation" placeholder="Enter your task" maxlength="100">
+               <button id="create-todo-button">Add todo</button>
+            </section>
+            <div class="line"></div>
+            <div class="search-container">
+               <input type="text" id="todo-search" placeholder="Search Todo">
+               <button id="clear-search-btn">Clear search</button>
+            </div>
+            <div class="users-data">
+               <div>
+                  <section id="users-output"></section>
+                  <button id="clear-current-user">Clear current user</button>
+               </div>
+               <section id="todos-output">
+               </section>
+            </div>
+         </main>
+      </div>
+      <script src="js/scripts.js"></script>
+   </body>
+</html>

@@ -1,0 +1,5 @@
+<div class="form" *ngIf="user">
+   
+   <input type="text" *ngFor="let field of editFields" [name]="field" [placeholder]="field" [value]="user[field]">
+   <button (click)="filteredFields(user)">Show edited field</button>
+</div>

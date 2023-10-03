@@ -1,0 +1,23 @@
+.user-item {
+   max-width: 250px;
+   min-width: 180px;
+   min-height: 280px;
+   max-height:max-content;
+   display:flex;
+   flex-direction: column;
+   justify-content: space-between;
+   border: 1px solid black;
+   padding: 5px;
+   margin: 10px;
+}
+.user-item:hover {
+   box-shadow: 0 0 10px #000;
+}
+
+h4 {
+   text-align: center;
+}
+button {
+   padding: 10px;
+   cursor: pointer;
+}

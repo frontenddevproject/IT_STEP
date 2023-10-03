@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/styles.css" type="text/css">
+      <title>HomeWork_35_Audioplayer_(Lystopad) F25</title>
+   </head>
+   <body>
+      <div class="audioplayer">
+         <h3>myPlayer</h3>
+         <div class="screen">
+            <div class="track-time"><span class="time-count" id="minutes"></span>:<span class="time-count" id="seconds"></span></div>
+            <div class="music-visualization">
+               <canvas id="canvas"></canvas>
+               <audio class="audiotrack" preload="auto"></audio>
+            </div>
+            <div class="track-name"></div>
+           
+         </div>
+         <div class="buttons-block">
+            <button class="buttons" id="previous"><span class="btn-content">Prev</span></button>
+            <button class="buttons" id="play"><span class="btn-content">Play</span></button>
+            <button class="buttons" id="pause"><span class="btn-content">Pause</span></button>
+            <button class="buttons" id="stop"><span class="btn-content">Stop</span></button>
+            <button class="buttons" id="next"><span class="btn-content">Next</span></button>
+         </div>
+         <div class="playlist"></div>
+      </div>
+      <script src="js/scripts.js"></script>
+   </body>
+</html>

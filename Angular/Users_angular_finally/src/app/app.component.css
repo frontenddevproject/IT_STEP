@@ -1,0 +1,9 @@
+.user-personal-data-output {
+   display: grid;
+   grid-template-columns: 0.3fr 1fr;
+   margin-bottom: 10px;
+}
+.user-personal-data-output span {
+   display: flex;
+   flex-wrap: wrap;
+}

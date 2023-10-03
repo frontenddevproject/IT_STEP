@@ -1,0 +1,34 @@
+<div class="wrapper">
+  <h3>Users</h3>
+
+  <input
+    type="text"
+    [value]="searchValue"
+    (input)="onInput($event)"
+    placeholder="Enter user's name"
+  />
+  <div class="button-container">
+    <button *ngIf="!isSorted" (click)="AZsortClick()">A-Z sorting</button>
+    <button *ngIf="!isSorted" (click)="ZAsortClick()">Z-A sorting</button>
+    <button class = "cancel"  *ngIf="isSorted" (click)="cancelSort()">Cancel sorting</button>
+  </div>
+
+  <div *ngIf="!isSorted" class="user-container">
+    <app-user
+      *ngFor="let user of searchValue
+          ? usersService.searchResult
+          : usersService.users"
+      [user]="user"
+    ></app-user>
+  </div>
+
+  <div *ngIf="isSorted" class="user-container">
+    <app-user
+      *ngFor="let user of searchValue
+          ? usersService.searchResult
+          : usersService.sortedUsers"
+      [user]="user"
+    ></app-user>
+  </div>
+
+</div>

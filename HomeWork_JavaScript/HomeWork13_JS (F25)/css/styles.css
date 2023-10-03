@@ -1,0 +1,26 @@
+body{
+   margin: 50px;
+   display: flex;
+   flex-direction: column;
+}
+button{
+   width:100px;
+   height: 36px;
+   border: none;
+   background-color: #8f8fce;
+   border-radius: 10px;
+   text-transform: uppercase;
+   color: #fff;
+   transition: all 0.4s;
+  
+}
+button:hover{
+   background-color: #6d6da0;
+}
+button:active{
+   transform: scale(0.9);
+}
+span{
+   margin-top: 50px;
+   font-size: 24px;
+}

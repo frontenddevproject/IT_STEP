@@ -1,0 +1,16 @@
+<h1>{{title}}</h1>
+<div class="counter">
+   <h2>Counter: {{counter}}</h2>
+   <div class="buttons-container">
+      <button (click)="increment()">Increment</button>
+      <button (click)="decrement()">Decrement</button>
+      <button (click)="clearCounter()">Clear counter</button>
+   </div>  
+</div>
+
+
+<main>
+   <div *ngFor="let num of numbers; index as i">
+      <p>{{i + 1}}. {{num}}</p>
+   </div>
+</main>

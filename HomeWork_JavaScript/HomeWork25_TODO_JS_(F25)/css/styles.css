@@ -1,0 +1,79 @@
+body{
+   background-image: url("../images/fon.jpg");
+   font-family: 'Marck Script', cursive;
+}
+.wrapper{
+   max-width: 1200px;
+   margin: auto;
+   position: relative;
+}
+h1{
+   text-align: center;
+   font-size: 40px;
+}
+.bg-image{
+   position:absolute;
+   top:0;
+   left:0;
+   z-index: -1;
+   opacity: 0.5;
+
+}
+.image-pen{
+   width: 100%;
+   height: 100%;
+}
+.todo{
+   transition: 0.3s all;
+}
+.done{
+   text-decoration: line-through red;
+}
+main{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+}
+#output{
+   width: 80%;
+}
+.todos-container{
+   display: grid;
+   grid-template-columns: 2fr 0.5fr;
+   justify-content: space-between;
+   gap: 10px;
+   margin: 10px 0;
+   border-bottom: 2px solid black;
+   padding: 5px 10px;
+   font-size: 20px;
+}
+#todo-creation{
+   width:90%;
+   font-family: 'Marck Script', cursive;
+   font-size: 18px;
+   outline: none;
+   border: 2px solid gray;
+   border-radius: 5px;
+}
+#todo-creation:hover{
+   border-color: green;
+}
+#todo-creation::placeholder{
+   font-family: 'Marck Script', cursive;
+   font-size: 14px;
+}
+.input-container{
+   width:80%;
+   height: 30px;
+   min-width: 250px;
+   display: grid;
+   grid-template-columns: 2fr 0.5fr;
+   gap:20px;
+}
+.line{
+   width:97%;
+   height: 2px;
+   margin: 10px 0;
+   background-color: red;
+}

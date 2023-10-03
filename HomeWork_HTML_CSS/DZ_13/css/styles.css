@@ -1,0 +1,213 @@
+*{
+   margin:0;
+   padding: 0;
+}
+.wrapper{
+   max-width: 1400px;
+   min-width: 375px;
+   margin:auto;
+   background-color: #f0f0f0;
+   padding:30px;
+}
+.header{
+   border-bottom: 1px solid #c0c0c0;
+   padding-bottom:30px;
+}
+.header__container{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   overflow: hidden;
+}
+.header__logo .title{
+   font:30px 'Arial', sans-serif;
+   text-transform: uppercase;
+}
+.header__logo .title::before{
+   content:"";
+   display: inline-block;
+   background-image: url('../icons/mail.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 60px;
+   width: 60px;
+   vertical-align: middle;
+   margin-right: 30px;
+}
+.header__user_mail{
+   font:20px 'Arial', sans-serif;
+}
+.header__user_mail::after{
+   content:"";
+   display: inline-block;
+   background-image: url('../icons/account.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 60px;
+   width: 60px;
+   vertical-align: middle;
+   margin-left: 20px;
+}
+.content{
+   display: flex;
+   padding-top: 20px;
+   justify-content: space-between;
+}
+.navigation{
+ margin-right: 30px;
+}
+.navigation__list__item{
+   list-style-type: none;
+   margin-bottom: 15px; 
+   white-space: nowrap;   
+}
+.active_item{
+   font:20px 'Arial', sans-serif;
+   background-color: #ffc0cb;
+}
+.navigation__list__link{
+   font:20px 'Arial', sans-serif;
+   color:#000;
+   text-decoration: none;
+}
+.navigation__list__link:hover{
+   text-decoration: underline;
+}
+.navigation__list__image{
+   vertical-align: middle;
+   margin-right: 20px;
+}
+.user-mail{
+   margin-right: 20px;
+   max-width: 80%;  
+}
+.user-mail__list__item{
+   list-style-type: none;  
+   border-bottom: 2px solid #c9c9c9;   
+}
+.user-mail__list__link{
+   font-family: 'Arial', sans-serif;
+   color:#000;
+   text-decoration: none;
+   display: flex;
+   justify-content: space-between;
+   overflow: hidden;
+   margin-bottom: 15px;
+}
+.user-mail__list__item .user-mail__list__link:hover {
+   text-shadow: 0 0 2px rgb(0, 0, 0, 0.2);
+ }
+.user-mail__list__item:not(:first-child){
+   margin-top:10px;
+}
+.user-mail__list__link__text-block{
+   display: flex;
+   flex-grow: 1;
+   max-width: 80%;
+}
+.user-mail__list__names{
+   display: flex;
+   white-space: nowrap;
+   margin-right: 30px;
+   flex: 0 0 150px;  
+}
+.user-mail__list__names::before{
+   content:"";
+   display: inline-block;
+   background-image: url('../icons/star1.svg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 15px;
+   width: 15px;
+   vertical-align: middle;
+   margin-right: 20px;
+}
+.names_favorites::before{
+   background-image: url('../icons/star2.svg');
+}
+.user-mail__list__text{
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   text-align: justify;
+}
+.user-mail__list__text span{
+   color:#a3a3a3;
+}
+.clip::before{
+   content:"";
+   display: inline-block;
+   background-image: url('../icons/attach_26.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 20px;
+   width: 20px;
+   margin-right: 20px;
+}
+.date{
+   display: flex;
+   flex-wrap: nowrap;
+   flex: 0 0 120px;
+}
+.hidden::before{
+   visibility: hidden;
+}
+@media screen and (max-width:800px){
+   .user-mail{
+      max-width: 65%;
+   }
+   .user-mail__list__link__text-block{
+      flex-direction: column;
+      margin-left: 30px;
+      max-width: 60%;
+   }
+   .user-mail__list__names{
+      flex:1;
+      position: relative;
+   }
+   .user-mail__list__names::before{
+      position: absolute;
+      left:-30px;
+      top:0;
+   }
+   .user-mail__list__text .mail-text{
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;   
+   }
+   .hidden-dash{
+      visibility: hidden;
+   }
+}
+@media screen and (max-width:550px){
+   .header__logo .title::before{
+      margin-right: 10px;
+   }
+   .header__user_mail::after{
+      margin-left: 10px;
+   }
+   .navigation{
+      margin-right: 10px;
+   }
+   .navigation__list__item span{
+      visibility: hidden;
+      display: block;
+      font-size: 0;
+   }
+   .user-mail{
+      max-width: 85%;
+   }
+}
+@media screen and (max-width:500px){
+   .header__container{
+      flex-direction: column;
+      justify-content: center;
+   }
+   .header__user_mail::after{
+      display: none;
+   }
+   .header__user_mail{
+      margin-top: 15px;
+      padding-left: 15px;
+   }
+}

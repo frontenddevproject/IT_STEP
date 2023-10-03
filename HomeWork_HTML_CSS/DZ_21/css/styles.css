@@ -1,0 +1,137 @@
+html{
+   --light-gray:#E7EBF4;
+   --gray:#68717A;
+   --white: #fff;
+   --bg-color:#F8F9FB;
+   --cart-border-color:#DFDFDF;
+}
+body{
+   margin:0;
+   padding:0;
+   background-color: var(--bg-color);
+}
+.flex{
+   display: flex;
+   justify-content: space-between;
+}
+.wrapper{
+   max-width: 900px;
+   margin:50px auto;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 0 15px;
+}
+.logo{
+   justify-content: center;
+   align-items: center;
+   width:70px;
+   height: 70px;
+   background-color: #4C3973;
+   color: var(--white);
+   font-size: 65px;
+   font-weight: 700;
+   border-radius: 10px;
+}
+.main-content {
+   flex-wrap: wrap;
+   gap:20px;
+   width:100%;
+   margin-bottom: 80px;
+}
+form{
+   flex:0 1 65%;
+}
+.name, .front-data-card {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap:20px;
+}
+.input-group-text{
+   background-color: var(--light-gray);
+}
+.location{
+   display: grid;
+   grid-template-columns: 1fr 0.75fr 0.5fr;
+   gap:20px;
+}
+.front-data-card .small-text{
+   font-size: 0.75em;
+}
+.back-data-card{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap:20px;
+}
+.btn{
+   width:100%;
+   font-size: 1.25em;
+   line-height: 40px;
+}
+.cart{
+   flex: 0 1 32%
+}
+.numberOfGoods{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: var(--gray);
+   color: var(--white);
+   font-weight: 700;
+   font-size: 20px;
+   width:30px;
+   height: 30px;
+   border-radius: 50%;
+}
+.cart-content{
+   flex-direction: column;
+   border:1px solid var(--cart-border-color);
+   border-radius: 5px;
+   background-color: var(--white);
+}
+.cart-content p{
+   margin: 0;
+}
+.cart-content span{
+   display: block;
+   font-size: 0.75em;
+}
+.promo{
+   background-color: var(--bg-color);
+}
+.promo .green-text{
+   color:#28a745;
+}
+.promocode{
+   border:1px solid var(--cart-border-color);
+   align-items: center;
+   background-color: var(--white);
+   padding: 8px;
+   border-radius: 8px;
+}
+.promocode .input-group{
+   flex-wrap: nowrap;
+   margin: 0;
+}
+.promocode .input-group input{
+   flex:0 1 75%;
+   padding:0 5px;
+}
+.promocode .input-group button{
+   flex:0 1 25%;
+   padding:0 5px;
+}
+.footer-list{
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+   justify-content: center;
+   gap:15px;
+}
+.footer-list-link{
+   text-decoration: none;
+}
+.footer-list-link:hover{
+   text-decoration: underline;
+   color: #0000ff;
+}

@@ -1,0 +1,170 @@
+body{
+   margin: 0;
+   padding: 0;
+   background: url('../images/bg-image.jpeg') center/cover fixed no-repeat;
+   overflow-x: hidden;
+}
+header{
+   margin:30px;
+}
+.wrapper{
+   font-family: 'Orbitron', sans-serif;
+   color: #fff; 
+}
+.registration-form{
+   width: 510px;
+   background-color: #212121f2;
+   position: absolute;
+   top:5%;
+   right:-630px;
+   overflow: auto;
+   padding:20px 60px;
+   opacity: 0;
+   visibility: hidden;
+   transition:all 1s;
+}
+.registration-form_open{
+   display: inline-block;
+   position: absolute;
+   top:25%;
+   right:0;
+   width:0;
+   padding:20px 30px;
+   font-size: 18px;
+   background-color: #30b2e6cc;
+   cursor: pointer;
+   word-break: break-all;
+   transition: all 1s;
+}
+.registration-form_close{
+   display: inline-block;
+   position: absolute;
+   top:5%;
+   right:0;
+   padding:20px;
+   font-size: 25px;
+   background-color: #30b2e6cc;
+   cursor: pointer;
+   transition: all 1s;
+   opacity: 0;
+   visibility: hidden;
+}
+.registration-form_close:hover, .registration-form_open:hover{
+   background-color: #64c6ec;
+}
+.open-reg:checked ~ .registration-form{
+   opacity: 1;
+   visibility: visible;
+   right:0;
+}
+.open-reg:checked ~ .btn-reg .registration-form_open{
+   right:630px;
+   opacity: 0;
+   visibility: hidden;
+}
+.open-reg:checked ~ .btn-reg .registration-form_close{
+   right:630px;
+   opacity: 1;
+   visibility: visible;
+}
+.registration-form__container form{
+   margin-top: 20px;
+   display: flex;
+   flex-direction: column;
+   gap:15px;
+   font:12px 'Orbitron', sans-serif;
+}
+.registration-form__title{
+   margin:0;
+   text-align: center;
+   font-size:32px;
+   font-weight: 700;
+   text-transform: uppercase;
+   letter-spacing:2px;
+}
+.registration-form__container form > div:not(:last-child){
+   display: flex;
+   flex-direction: column;
+}
+input, select, button{
+   cursor: pointer;
+}
+input, select{
+   margin-bottom:5px;
+   padding-left: 20px;
+   height: 35px;
+   font:16px 'Orbitron', sans-serif;
+   color:#fff; 
+   border:2px solid #ff0000;
+   background-color:#414141f2;
+   outline: none;
+   vertical-align: middle;
+}
+input:hover, select:hover{
+   background-color:#2e2e2ef2;
+}
+input::placeholder, select::placeholder{
+   color:#ff0000;
+   font-size:12px;
+}
+input:focus::placeholder{
+   color:#30b2e6;
+}
+.fraction{
+   border-color: #ff0000;
+   padding: 0 20px
+}
+.fraction__list{
+   margin:0;
+   padding: 0;
+   display: flex;
+   justify-content: space-between;
+}
+.fraction__list__item{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   font-size: 16px;
+}
+.fraction input:checked + span{
+   color:#30b2e6;
+}
+.fraction span:hover{
+   cursor: pointer;
+}
+input:focus, select:focus, .fraction:hover{
+   border-color: #00888fe6;
+}
+.registration__footer-btn{
+   display: flex;
+   justify-content: space-between;
+   gap:30px;
+   margin: 20px 0;
+}
+.footer-btn input{
+   margin-right: 10px;
+}
+.footer-btn{
+   flex-basis: 50%;
+   flex-grow:1;
+   height: 40px;
+}
+.footer-btn{
+   background-color: #30b2e6;
+   font:16px 'Orbitron', sans-serif;
+   color:#fff;
+   transition:background-color 0.4s;
+}
+.footer-btn:hover{
+   background-color: #64c6ec;
+}
+.footer-btn:active{
+   background-color: #30b2e6;
+}
+.registration__footer_link{
+   color: rgb(48, 178, 230);
+   text-decoration: none;
+}
+.registration__footer_link:hover{
+   text-decoration: underline;
+}

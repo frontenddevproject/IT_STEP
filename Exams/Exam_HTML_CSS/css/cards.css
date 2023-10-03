@@ -1,0 +1,26 @@
+.main__posts{
+   background-color: #EDF7F9;
+   padding:20px 15% 80px;
+}
+.main__posts-cards{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   gap:20px;
+}
+.main__posts-card{
+   flex: 1 1 300px;
+   background-color: #fff;
+   border-radius: 5px;
+   padding:10px;
+   color: #000;
+   text-decoration: none;
+   transition:all 0.3s;
+}
+.main__posts-card:hover{
+   transform: scale(1.01);
+}
+.card__title{
+   font-size: 22px;
+   font-weight: 700;
+}

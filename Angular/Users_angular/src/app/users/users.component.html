@@ -1,0 +1,9 @@
+<div class="wrapper">
+   <h3>Users</h3>
+
+   <input type="text" [value]="searchValue" (input)="onInput($event)" placeholder="Enter user's name or location">
+
+   <div class="user-container">
+      <app-user *ngFor="let user of searchValue ? searchResult : users" [user]="user"></app-user>
+   </div>
+</div>

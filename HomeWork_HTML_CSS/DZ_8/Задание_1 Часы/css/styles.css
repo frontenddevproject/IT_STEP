@@ -1,0 +1,59 @@
+.clock{
+   height: 400px;
+   width: 400px;
+   border: 5px solid #138385;
+   border-radius: 50%;
+   margin: 100px auto;
+}
+.arrows{
+   position: relative;
+   top:0;
+   left:185px;
+}
+.center-hourArrow, .center-minuteArrow{
+   height: 20px;
+   width: 20px;
+   border: 5px solid #138385;
+   background-color: #138385;
+   border-radius: 50%;
+   margin: auto;
+   position: absolute;
+   top:185px;
+   left:0px;
+   transform-origin: 50% 50%;
+   transform: rotate(0deg);     
+}
+.hourArrow{
+   height:120px;
+   width: 8px;
+   background-color: #138385;
+   position:absolute;
+   top: 10px;
+   left:15px;
+   transform-origin: 0px 0px;
+   transform: rotate(180deg);  
+}
+.minuteArrow{
+   height: 180px;
+   width: 5px;
+   background-color: #138385;
+   position:absolute;
+   top: 10px;
+   left:13px;
+   transform-origin: 0px 0px;
+   transform: rotate(180deg);
+}
+@keyframes runCenter{
+   from{
+      transform: rotate(0deg);
+   }
+   to{
+      transform: rotate(360deg);
+   }
+}
+.center-hourArrow{
+   animation: runCenter 60s linear infinite;
+}
+.center-minuteArrow{
+   animation: runCenter 5s linear infinite;
+}

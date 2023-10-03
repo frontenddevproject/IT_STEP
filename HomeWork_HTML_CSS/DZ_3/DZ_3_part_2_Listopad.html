@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>DZ_3_part_2_Listopad</title>
+  <style>
+      body{
+         background: #effdff;
+         padding: 25px;
+      }
+      ul{
+         list-style-type: none;
+         padding: 0px;     
+         background: #aaf3fd;
+      }
+      li{
+         padding: 15px 30px;
+      }
+      li::before{
+         content: url('https://i.postimg.cc/Gtm7SBmm/unchecked-16.png');
+         padding-right: 15px;     
+      }
+      li::after{
+         content: '\00D7'; 
+         color: red;
+         font-weight: 700;
+         padding-left: 20px;
+      }
+      .odd{
+         background: #77ebfa;
+      }
+      .checked{
+         background: #eeeeee;
+      }
+      .checked::before{
+         content: url('https://i.postimg.cc/dQ5SZ95k/checked-16.png');
+      }
+   </style>
+</head>
+<body>
+      <h2>My To Do List</h2>
+      <ul>
+         <li class="odd">Hit the gym</li>
+         <li class="checked"><s>Pay bills</s></li>
+         <li class="odd">Meet John</li>
+         <li>Buy eggs</li>
+         <li class="checked"><s>Read a book</s></li>
+         <li>Organize office</li>
+         <li class="odd">Eat dinner</li>
+         <li>Buy apples</li>
+         <li class="odd">Meet George</li>
+         <li>Feed the cat</li>
+         <li class="checked"><s>Write a letter</s></li>
+         <li>Run 1 km</li>
+      </ul>
+</body>
+</html>

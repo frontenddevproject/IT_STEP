@@ -1,0 +1,72 @@
+body{
+   background: url('../images/clouds_bg.jpg') no-repeat center/cover fixed;
+}
+.flex{
+   display: flex;
+   justify-content: center;
+}
+.title-content{
+   font-weight: 700;
+   font-size: 80px;
+   line-height: 100px;
+   text-transform: uppercase;
+   margin-bottom: 80px;
+}
+@media screen and (max-width:500px){
+   .title-content{
+      font-size: 50px;
+      line-height: 70px;
+   }
+}
+.wrapper{
+   max-width: 1200px;
+   min-width: 320px;
+   margin: 100px auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.btn{
+   width: 250px;
+   font-size: 24px;
+   letter-spacing: 5px;
+}
+.user-view, .sidenav{
+   background-color: rgb(146, 146, 146);
+}
+.sidenav .user-view{
+   padding-left: 0;
+   padding-right: 0;
+}
+.sidenav li a, .sidenav .user-view .name, .sidenav .user-view .email{
+   font-size: 18px;
+}
+.sidenav .user-view .circle{
+   object-fit: cover;
+   width: 80%;
+   height: auto;
+}
+.sidenav-trigger .material-icons{
+  font-size: 50px;
+  margin: 30px;
+  background-color: rgb(0, 226, 215);
+  color: #fff;
+  border-radius: 50%;
+}
+.social{
+   display: flex;
+   justify-content: space-around;
+   gap:20px;
+   padding:0 20px
+}
+.social img {
+   width:32px;
+   height: 32px;
+}
+.social-link:hover img{
+   filter: invert(1);
+}
+.nav-link:active{
+   transform: translateX(30px);
+}

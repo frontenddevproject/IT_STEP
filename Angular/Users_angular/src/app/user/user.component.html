@@ -1,0 +1,27 @@
+<div class="user-item" *ngIf="user">
+  <div class="user-data">
+    <h4>Personal data</h4>
+    <div class="user-personl-data" *ngIf="!isUserDataEditing">
+      <p>name: {{ user.name }}</p>
+      <p>email: {{ user.email }}</p>
+      <p>phone: {{ user.phone }}</p>
+    </div>
+
+    <app-user-edit-form
+      *ngIf="isUserDataEditing"
+      [user]="user"
+      [editFields]="editFields"
+    ></app-user-edit-form>
+    <!-- <p>age: {{user.age}}</p>
+         <p *ngIf="isShowUserData">
+            <app-lifecycle></app-lifecycle> 
+            Password: {{ user.age }}
+         </p>
+         <button (click)="showAndHideUserData()">Hide private data</button> -->
+    <!-- <h4 class="user-location">User location</h4>
+      <div *ngFor="let location of user.locations; index as i" >
+         <p>{{i+1}}. {{location.title}}</p>
+      </div> -->
+  </div>
+  <button (click)="toggleIsUserDataEditing()">Edit</button>
+</div>

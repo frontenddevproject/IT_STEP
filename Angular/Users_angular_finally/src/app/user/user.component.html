@@ -1,0 +1,18 @@
+<div class="user-item" *ngIf="user">
+  <div class="user-data">
+    <h4>Personal data</h4>
+    <div class="user-personal-data" *ngIf="!isUserDataEditing">
+      <p class="user-personal-data-output"><span>name:</span> <span>{{ user.name }}</span></p>
+      <p class="user-personal-data-output"><span>email:</span> <span>{{ user.email }}</span></p>
+      <p class="user-personal-data-output"><span>phone:</span> <span>{{ user.phone }}</span></p>
+      <p class="user-personal-data-output"><span>lat:</span> <span>{{user.address.geo.lat}}</span></p>
+    </div>
+    <app-user-edit-form
+      *ngIf="isUserDataEditing"
+      [user]="user"
+      [editFields]="['name', 'email', 'phone', 'lat', 'lng']"
+    ></app-user-edit-form>
+  </div>
+  <button *ngIf="!isUserDataEditing" (click)="toggleIsUserDataEditing()">Edit</button>
+  <button *ngIf="isUserDataEditing" (click)="toggleIsUserDataEditing()">Save Changes</button>
+</div>

@@ -1,0 +1,142 @@
+body{
+   background-image: url("../images/fon.jpg");
+   background-attachment: fixed;
+   font-family: 'Marck Script', cursive;
+}
+.wrapper{
+   max-width: 1200px;
+   margin: auto;
+   position: relative;
+}
+h1{
+   text-align: center;
+   font-size: 40px;
+}
+.bg-image{
+   position:absolute;
+   top:0;
+   left:0;
+   z-index: -1;
+   opacity: 0.4;
+   
+
+}
+.image-pen{
+   width: 100vw;
+   height: 100vh;
+   position: fixed;
+}
+.todo{
+   transition: 0.3s all;
+}
+.done{
+   text-decoration: line-through red;
+}
+main{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+}
+/* #todos-output{
+   width: 80%;
+} */
+.todos-container{
+   display: grid;
+   grid-template-columns: 2fr 0.1fr 0.1fr;
+   justify-content: space-between;
+   gap: 10px;
+   margin: 10px 0;
+   border-bottom: 2px solid black;
+   padding: 5px 10px;
+   font-size: 20px;
+}
+#todo-creation, #todo-search{
+   width:90%;
+   font-family: 'Marck Script', cursive;
+   font-size: 18px;
+   outline: none;
+   border: 2px solid gray;
+   border-radius: 5px;
+}
+#todo-creation:hover{
+   border-color: green;
+}
+#todo-creation::placeholder{
+   font-family: 'Marck Script', cursive;
+   font-size: 14px;
+}
+
+.input-container, .search-container{
+   width:80%;
+   height: 30px;
+   min-width: 250px;
+   display: grid;
+   grid-template-columns: 2fr 0.5fr;
+   gap:20px;
+   margin: auto;
+}
+.search-container{
+   width:50%;
+   height: 30px;
+   min-width: 250px;
+   display: grid;
+   grid-template-columns: 2fr 0.5fr;
+   gap:20px;
+   margin: 30px auto 15px;
+}
+
+.line{
+   width:97%;
+   height: 2px;
+   margin: 10px 0;
+   background-color: red;
+}
+#users-output{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   margin: 30px 0;
+
+}
+
+.active-user-button{
+   background-color: gray;
+}
+.scroll-up{
+   position: fixed;
+   left: 95%;
+   top: 50%;
+   border-radius: 50%;
+   width:40px;
+   height: 40px;
+   font-size: 30px;
+   box-sizing: border-box;
+   text-align: center;
+   padding:0;
+}
+.scroll-down{
+   position: fixed;
+   left: 95%;
+   top: 60%;
+   border-radius: 50%;
+   width:40px;
+   height: 40px;
+   font-size: 30px;
+   box-sizing: border-box;
+   text-align: center;
+   padding:0;
+}
+.users-data{
+   display: grid;
+   grid-template-columns: 1fr 3fr;
+   justify-content: center;
+   gap: 30px;
+   margin: 30px 0;
+}
+.delete-button{
+   filter: grayscale(1)
+}
+.delete-button:hover{
+   filter: grayscale(0)
+}

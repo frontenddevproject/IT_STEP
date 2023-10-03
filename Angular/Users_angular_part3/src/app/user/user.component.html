@@ -1,0 +1,16 @@
+<div class="user-item" *ngIf="user">
+  <div class="user-data">
+    <h4>Personal data</h4>
+    <div class="user-personl-data" *ngIf="!isUserDataEditing">
+      <p>name: {{ user.name }}</p>
+      <p>email: {{ user.email }}</p>
+      <p>phone: {{ user.phone }}</p>
+    </div>
+    <app-user-edit-form
+      *ngIf="isUserDataEditing"
+      [user]="user"
+      [editFields]="['name', 'email', 'phone', 'lat', 'lng']"
+    ></app-user-edit-form>
+  </div>
+  <button (click)="toggleIsUserDataEditing()">Edit</button>
+</div>

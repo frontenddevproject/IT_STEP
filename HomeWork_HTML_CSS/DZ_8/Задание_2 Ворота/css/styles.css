@@ -1,0 +1,43 @@
+.gates{
+   width:605px;
+   height: 188px;
+   margin:80px auto;
+   perspective: 800px;
+   position:relative;
+   background-color: #e9e9e9;
+   box-sizing: border-box;
+}
+img{
+   position:absolute;
+   z-index: -1;
+   top:25px;
+   left:191px;
+}
+.leftGate, .rightGate{
+   margin:0;
+   padding:0;
+   width:300px;
+   height: 188px;
+   border:5px solid #ff0000;
+   background-color: #990303;
+   display:inline-block;
+   vertical-align: top;
+   font-size: 0;
+   box-sizing: border-box;
+}
+.leftGate{
+   transform-origin: 0 0;
+   transform: rotateY(0);
+   transition: transform 2s;
+}
+.rightGate{
+   transform-origin: 300px 0;
+   transform: rotateY(0);
+   transition: transform 2s;
+}
+.gates:hover .leftGate{
+   transform: rotateY(60deg);
+}
+.gates:hover .rightGate{
+   transform: rotateY(-60deg);
+}
